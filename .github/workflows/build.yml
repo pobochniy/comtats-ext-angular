@@ -7,5 +7,9 @@ jobs:
     steps:
       - name: checkout 🛎️
         uses: actions/checkout@v3
+      - name: clear
+        run: rm ~/projects/web/*
+      - name: npm
+        run: npm i
       - name: publish
         run: ng build --output-path ~/projects/web
