@@ -63,7 +63,8 @@
               "browserTarget": "combats-ext-angular:build:production"
             },
             "development": {
-              "browserTarget": "combats-ext-angular:build:development"
+              "browserTarget": "combats-ext-angular:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "db782d8b-1621-41d9-9590-35d00ee23d8b"
   }
 }
