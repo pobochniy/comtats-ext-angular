@@ -1,0 +1,11 @@
+on: push
+
+jobs:
+
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout 🛎️
+        uses: actions/checkout@v3
+      - name: publish
+        run: ng build --configuration production --output-path ~/projects/web
