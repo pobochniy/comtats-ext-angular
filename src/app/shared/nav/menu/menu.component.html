@@ -23,14 +23,8 @@
     <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]="{ exact: true }">
       <a [routerLink]='["/"]'><i class="fas fa-home"></i>Home</a>
     </li>
-    <li *ngIf="userService.hasRole(roles.issueRead) || userService.hasRole(roles.issueCrud)" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]="{ exact: false }" >
-      <a [routerLink]='["/issue"]'><i class="far fa-id-card"></i>Issue</a>
-    </li>
-    <li *ngIf="userService.hasRole(roles.epicRead) || userService.hasRole(roles.epicCrud)" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]="{ exact: false }" >
-      <a [routerLink]='["/epic"]'><i class="fas fa-helicopter"></i>Epic</a>
-    </li>
-    <li *ngIf="userService.hasRole(roles.sprintRead) || userService.hasRole(roles.sprintCrud)" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]="{ exact: false }" >
-      <a [routerLink]='["/sprint"]'><i class="fas fa-running"></i>Sprint</a>
+    <li *ngIf="userService.hasRole(roles.statsRead) || userService.hasRole(roles.statsCrud)" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]="{ exact: false }" >
+      <a [routerLink]='["/bot/observer"]'><i class="far fa-id-card"></i>Observer</a>
     </li>
     <li *ngIf="userService.hasRole(roles.roleManagement)" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]="{ exact: false }" >
       <a [routerLink]='["/rolemanagement"]'><i class="fas fa-user-tag"></i>Role Management</a>

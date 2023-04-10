@@ -1,0 +1,19 @@
+<form class="" (ngonsubmit)="ngOnInit()">
+    <h4>Bots <small>last updated {{datepipe.transform(lastUpdated, 'HH:mm:ss') }}</small>
+        <a href="javascript:void(0)" (click)="refreshData()">[Refresh]</a>
+    </h4>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Bot Name</th>
+                <th>Last Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let activity of dataSource">
+                <td>{{activity.botName}}</td>
+                <td class="mw-120">{{datepipe.transform(activity.lastAction, 'HH:mm:ss') }}</td>
+            </tr>
+        </tbody>
+    </table>
+</form>

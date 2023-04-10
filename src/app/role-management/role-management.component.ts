@@ -77,15 +77,11 @@ export class RoleManagementComponent implements OnInit {
     this.roles = [
       new UserRoleInfoModel(UserRoleEnum.roleManagement, 'Role Management', 'roleManagement'),
 
-      new UserRoleInfoModel(UserRoleEnum.issueRead, 'Просмотр Issue', 'issue'),
-      new UserRoleInfoModel(UserRoleEnum.issueCrud, 'Редактирование, содание, удаление Issue', 'issue'),
+      new UserRoleInfoModel(UserRoleEnum.persRead, 'Просмотр Карточки бота', 'bot'),
+      new UserRoleInfoModel(UserRoleEnum.persCrud, 'Редактирование, содание, удаление бота', 'bot'),
 
-      new UserRoleInfoModel(UserRoleEnum.epicRead, 'Просмотр Epic', 'epic'),
-      new UserRoleInfoModel(UserRoleEnum.epicCrud, 'Редактирование, содание, удаление Epic', 'epic'),
-
-      new UserRoleInfoModel(UserRoleEnum.sprintRead, 'Просмотр Sprint', 'sprint'),
-      new UserRoleInfoModel(UserRoleEnum.sprintCrud, 'Редактирование, содание, удаление Sprint', 'sprint')
+      new UserRoleInfoModel(UserRoleEnum.statsRead, 'Обсервер ботов', 'bot'),
+      new UserRoleInfoModel(UserRoleEnum.statsCrud, 'Редактирование, содание, удаление активностей', 'bot'),
     ]
   }
-
 }

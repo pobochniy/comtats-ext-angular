@@ -13,6 +13,7 @@ import { UsersApiService } from './shared/api/users-api.service';
 import { NavModule } from './shared/nav/nav.module';
 import { NavTabsService } from './shared/nav/nav-tabs.service';
 import { DatePipe } from '@angular/common';
+import { BotModule } from './bot/bot.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DatePipe } from '@angular/common';
     SharedModule,
     FormsModule,
     AuthModule,
+    BotModule,
     RoleManagementModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' }

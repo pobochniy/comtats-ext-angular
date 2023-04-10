@@ -2,12 +2,9 @@ export enum UserRoleEnum {
   none,
   roleManagement,
 
-  issueRead = 10,
-  issueCrud,
+  persRead = 10,
+  persCrud,
 
-  epicCrud = 20,
-  epicRead,
-
-  sprintCrud = 30,
-  sprintRead
+  statsRead = 20,
+  statsCrud,
 }
