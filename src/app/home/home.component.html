@@ -1,8 +1,8 @@
-<h1>АСУ</h1>
+<h1>Wisdom snakes</h1>
 
 <div *ngIf="service.isAuth">
-  <p>Добро пожаловать, {{service.User?.userName}} <a [routerLink]='["/"]' (click)="logOut()">[Выход]</a></p>
-  <p>Хорошего дня</p>
+  <p>Здарова, заебал, {{service.User?.userName}} <a [routerLink]='["/"]' (click)="logOut()">[Выход]</a></p>
+  <p>Хорошего дня!</p>
 </div>
 
 <div *ngIf="!service.isAuth">
